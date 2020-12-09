@@ -31,7 +31,6 @@
         required />
         <input
         class="name-input form-input"
-        autofocus
         type="text"
         name="lastName"
         placeholder="Last Name"
@@ -41,16 +40,52 @@
       </div>
       <input
         class="email-input form-input"
-        autofocus
         type="email"
         name="email"
         placeholder="Email"
         pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
         autocomplete="email"
         required />
+        <p class="plans-heading">Select Your Plan:</p>
+        <div class="plans-wrapper">
+          <label>
+            <span>Personal</span>
+            <input
+            class="plans-checkbox form-checkbox"
+            type="radio"
+            name="Plan"
+            value="personal"
+            required />
+          </label>
+          <label>
+            <span>Business</span>
+            <input
+            class="plans-checkbox form-checkbox"
+            type="radio"
+            name="Plan"
+            value="business"
+            required />
+          </label>
+          <label>
+            <span>Commerce</span>
+            <input
+            class="plans-checkbox form-checkbox"
+            type="radio"
+            name="Plan"
+            value="commerce"
+            required />
+          </label>
+        </div>
+        <input
+        class="city-input form-input"
+        type="text"
+        name="city"
+        placeholder="City"
+        pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+        autocomplete="email"
+        required />
         <input
         class="password-input form-input"
-        autofocus
         type="password"
         name="password"
         placeholder="Password"
@@ -59,7 +94,6 @@
         required />
         <input
         class="re-password-input form-input"
-        autofocus
         type="password"
         name="re-password"
         placeholder="Confirm Password"
@@ -69,7 +103,6 @@
         <label class="accept-terms-wrapper">
           <input
           class="accept-checkbox form-checkbox"
-          autofocus
           type="checkbox"
           name="Accept Terms"
           required />
