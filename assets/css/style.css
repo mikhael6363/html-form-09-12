@@ -47,7 +47,8 @@ margin-bottom: 1.3em;
 }
 .form-input,
 .accept-terms-wrapper,
-.form-button {
+.form-button,
+.plans-wrapper {
   margin: .8em 0;
 }
 .name-wrapper {
@@ -56,6 +57,14 @@ margin-bottom: 1.3em;
 }
 .name-input {
   width: 47%;
+}
+.plans-heading {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.plans-wrapper {
+  display: flex;
+  justify-content: space-around;
 }
 .terms-link {
   text-decoration: none;
