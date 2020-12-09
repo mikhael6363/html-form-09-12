@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+</head>
+<body>
+  <article class="reg-form">
+    <header class="form-header">
+      <h1 class="form-heading">Register</h1>
+      <p class="form-caption">Create your account. It's free and only takes a minute.</p>
+    </header>
+    <form
+    action="#"
+    method="GET"
+    class="reg-form-wrapper">
+      <div class="name-wrapper">
+        <input
+        class="name-input form-input"
+        autofocus
+        type="text"
+        name="firstName"
+        placeholder="First Name"
+        pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+        autocomplete="given-name"
+        required />
+        <input
+        class="name-input form-input"
+        autofocus
+        type="text"
+        name="lastName"
+        placeholder="Last Name"
+        pattern="\b([A-ZÀ-ÿ][-,a-z. ']+[ ]*)+"
+        autocomplete="family-name"
+        required />
+      </div>
+      <input
+        class="email-input form-input"
+        autofocus
+        type="email"
+        name="email"
+        placeholder="Email"
+        pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+"
+        autocomplete="email"
+        required />
+        <input
+        class="password-input form-input"
+        autofocus
+        type="password"
+        name="password"
+        placeholder="Password"
+        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+        autocomplete="new-password"
+        required />
+        <input
+        class="re-password-input form-input"
+        autofocus
+        type="password"
+        name="re-password"
+        placeholder="Confirm Password"
+        pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$"
+        autocomplete="new-password"
+        required />
+        <label class="accept-terms-wrapper">
+          <input
+          class="accept-checkbox form-checkbox"
+          autofocus
+          type="checkbox"
+          name="Accept Terms"
+          required />
+          <span>I accept the <a href="https://www.google.com/" class="terms-link" target="_blank">Terms of Use</a> & <a href="https://www.google.com/" class="terms-link" target="_blank">Privacy Policy</a></span>
+        </label>
+      <button class="form-button" type="submit">Register Now</button>
+    </form>
+  </article>
+</body>
+</html>
