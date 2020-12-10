@@ -4,6 +4,13 @@
 * {
   box-sizing: border-box;
 }
+a,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  outline: none;
+}
 input {
   padding: 10px;
   border: 1px solid #c4c4c4;
@@ -82,7 +89,6 @@ input:focus {
   justify-content: space-around;
 }
 .terms-link {
-  text-decoration: none;
   color: #70ab70;
 }
 .form-button {
