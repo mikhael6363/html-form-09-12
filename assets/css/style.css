@@ -25,6 +25,7 @@ input:focus {
   padding: 25px;
   background: #edeef2;
   border-radius: 3px;
+  box-shadow: 0 6px 10px rgba(0,0,0,.5);
   text-align: center;
   color: #4b4c4c;
 }
