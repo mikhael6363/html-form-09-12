@@ -29,12 +29,26 @@ input:focus {
   color: #4b4c4c;
 }
 .form-header {
-margin-bottom: 1.3em;
+  margin-bottom: 1.3em;
 }
 .form-heading {
+  display: flex;
   margin-bottom: 15px;
   font-size: 2.1rem;
   font-weight: 500;
+}
+.form-heading:before,
+.form-heading:after { 
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid #4b4c4c;
+  margin: auto;
+}
+.form-heading:before {
+  margin-right: 10px;
+}
+.form-heading:after {
+  margin-left: 10px;
 }
 .form-caption {
   font-family: Verdana, sans-serif;
